@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  color: #797979;
+}
+
+header {
+  background-image: url("../slike/background.jpg");
+  height: 75vh;
+  padding: 20px;
+}
+header nav {
+  width: 70%;
+  margin: 0 auto;
+  padding: 0.5em;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+header nav .mega {
+  color: #ff3720;
+  font-weight: 900;
+  font-size: 24px;
+  font-family: "Raleway", sans-serif;
+}
+header nav .rent {
+  color: #797979;
+  font-weight: 900;
+  font-size: 24px;
+  font-family: "Raleway", sans-serif;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  align-items: flex-end;
+}
+header div:last-child {
+  padding: 200px;
+}
+header div:last-child h1,
+header div:last-child h2 {
+  text-align: center;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  width: 50%;
+  margin: 0 auto;
+}
+header div:last-child h1 {
+  border-bottom: 1px solid #ff3720;
+}
+
+section.catalog {
+  text-align: center;
+  padding: 50px;
+  background-color: #f0f0f0;
+}
+section.catalog div.container {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+}
+section.catalog div.container div {
+  width: 20%;
+}
+section.catalog div.container div img {
+  width: 100%;
+}
+
+button {
+  background-color: #ff3720;
+  color: white;
+  padding: 4px 35px;
+  margin: 4px;
+  border: none;
+}
+
+section.pricing {
+  text-align: center;
+  padding: 50px;
+}
+section.pricing button {
+  display: none;
+}
+section.pricing table {
+  margin: 30px auto;
+  width: 60%;
+  border-collapse: collapse;
+}
+section.pricing table th,
+section.pricing table td {
+  padding: 0.8em 1.2em;
+}
+section.pricing table thead {
+  background-color: #ff3720;
+}
+section.pricing table thead th {
+  color: white;
+}
+section.pricing table thead th:first-child {
+  background-color: #e42b15;
+}
+section.pricing table tbody th {
+  background-color: #f0f0f0;
+}
+section.pricing table tbody tr {
+  border-bottom: 1px solid grey;
+}
+
+footer {
+  background-color: black;
+  padding: 15px;
+}
+footer .mega {
+  color: #ff3720;
+  font-weight: 900;
+  font-size: 24px;
+  font-family: "Raleway", sans-serif;
+}
+footer .rent {
+  color: #797979;
+  font-weight: 900;
+  font-size: 24px;
+  font-family: "Raleway", sans-serif;
+}
+footer h2 {
+  border-bottom: 1px solid #ff3720;
+  width: 80%;
+  margin: 0 auto;
+}
+footer div.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  width: 80%;
+  margin: 0 auto;
+}
+footer div.container p {
+  font-style: italic;
+  color: white;
+}
+footer div.container iframe {
+  width: 30%;
+  height: 300px;
+  margin-right: 40px;
+}
+
+@media screen and (max-width: 1080px) {
+  header {
+    background-size: cover;
+  }
+  header nav {
+    width: 100%;
+  }
+  header div:last-child {
+    padding: 200px 20px;
+  }
+  header div:last-child h1,
+  header div:last-child h2 {
+    width: 90%;
+  }
+  section.catalog div.container {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  section.catalog div.container div {
+    width: 40%;
+  }
+  footer {
+    text-align: center;
+  }
+  footer h2 {
+    width: 60%;
+  }
+  footer div.container {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 25px;
+  }
+  footer div.container iframe {
+    width: 60%;
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  header {
+    padding: 20px 5px;
+    background: black;
+    height: auto;
+  }
+  header nav {
+    flex-direction: column;
+  }
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  header nav ul li {
+    margin: 10px;
+  }
+  header div:last-child {
+    padding: 50px 10px 25px 10px;
+  }
+  header div:last-child h1 {
+    font-size: 48px;
+  }
+  section.catalog div.container div {
+    width: 80%;
+  }
+  button {
+    padding: 20px 80px;
+  }
+  section.pricing h1 {
+    margin: 30px;
+  }
+  section.pricing button {
+    display: block;
+    margin: 0 auto;
+  }
+  section.pricing table {
+    display: none;
+  }
+  footer div.container iframe {
+    width: 80%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

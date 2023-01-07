@@ -1,0 +1,23 @@
+@mixin main {
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: $mojfont;
+  }
+}
+
+@mixin clearFix {
+  &::after,
+  &::before {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  &::after {
+    clear: both;
+  }
+}
+
+@mixin center {
+  margin: 0 auto;
+}

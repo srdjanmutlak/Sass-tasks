@@ -1,0 +1,219 @@
+@mixin main {
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: $main_font;
+		color: $main_text_color;
+	}
+}
+
+@mixin inlineBlockList4FlexUsage {
+	ul {
+        list-style: none;
+
+        li {
+            display: inline-block;
+
+            a {
+                color: $black_color;
+                text-decoration: none;
+                padding: 1em 1.5em;
+                display: inline-block;
+            }
+
+            &:hover {
+                background-color: $yellow_color;
+            }
+        }
+
+        .kategorija {           //must have .kategorija for small screan option
+            display: none;
+        }
+    }
+}
+
+@mixin usageOfKategorija4SmallScreen{
+		ul {
+            display: block;
+            width: 100%;
+
+            li {
+                text-align: center;
+                display: none;
+            }
+
+            &:hover {
+                li {
+                    display: block;
+                }
+            }
+
+            .kategorija {
+                display: block;
+            }
+        }
+}
+
+@mixin inputFormsVerticaly{
+	form {
+        width: 25%;
+        display: inline-block;
+        position: relative;
+        background: $gray_color;
+        height: 100%;
+        margin-right: 15px;
+        text-align: center;
+    
+        label {
+            color: white
+        }
+    
+        input {
+            display: block;
+            margin: auto;
+        }
+    
+        input[type="text"] {
+            width: 62%;
+            padding: 1em;
+            box-shadow: 1px 1px 3px gray;
+            border: none;
+            border-radius: 10px;
+        }
+    
+        input[type="submit"] {
+            padding: 1em;
+            color: $orange_color;
+            font-size: 1em;
+            border: none;
+            border-radius: 10px;
+            margin: 0.5em auto;
+        }
+    }
+}
+
+@mixin mega-rent {
+	.mega {
+		color: $main_red;
+		font-weight: 900;
+		font-size: 24px;
+		font-family: $logo_font;
+	}
+	.rent {
+		color: $main_text_color;
+		font-weight: 900;
+		font-size: 24px;
+		font-family: $logo_font;
+	}
+}
+
+@mixin section-format {
+	text-align: center;
+    padding: 50px;
+}
+
+@mixin centriraj {
+	width: 80%;
+	margin: 0 auto;
+}
+
+@mixin rotateY180deg {
+	height: 350px;
+    width: 60%;
+    border-radius: 20px;
+    transition: transform 800ms ease-in-out;
+
+        &:hover {
+          transform: rotateY(180deg) scale(1.2);
+        }
+}
+
+@mixin rotateX360deg {
+	 display: flex;
+      width: 90%;
+      height: 300px;
+      color: $white;
+      background-color: $black-repo;
+      margin: 20px 45px;
+      border: 2px $gray-dark solid;
+      padding: 15px;
+      border-radius: 10px;
+      transition: all 1s;
+
+      &:hover {
+        transform: rotateX(360deg);
+        scale: 1.1;
+      }
+}
+
+@mixin img&TextAreFullyVisible {
+ &:hover {
+      .img {
+        opacity: 1;
+      }
+
+      .text {
+        visibility: visible;
+      }
+    }
+}
+
+@mixin btn {
+  background-color: white;
+  border: 1px solid $color-lightgrey-one;
+  padding: 15px 30px;
+  border-radius: 30px;
+  margin-left: 20px;
+  &:hover {
+    color: white;
+    background-color: $color-lightgrey-one;
+    cursor: pointer;
+  }
+}
+
+@mixin headings {
+  text-align: center;
+  color: $color-headings;
+  margin-bottom: 20px;
+  font-weight: bolder;
+}
+
+@mixin headingsMarginAuto {
+  text-align: center;
+  color: white;
+  font-family: $logo_font;
+  width: 50%;
+  margin: 0 auto;
+}
+
+@mixin hoverBigInput&Links {
+		li {
+            transition: all 1s;
+            &:hover {
+              transform: scale(1.5);
+            }
+            a {
+              color: $white;
+              margin: 0 15px;
+              padding: 5px 10px;
+              transition: all 1s;
+
+              &:hover {
+                color: $black-nav;
+                background-color: $white;
+              }
+            }
+}
+
+@mixin srednji-ekran {
+	@media screen and (max-width: 1080px) {
+		@content	
+	}
+}
+
+@mixin mali-ekran {
+	@media screen and (max-width: 768px) {
+		@content	
+	}
+}

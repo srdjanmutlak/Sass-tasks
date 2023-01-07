@@ -1,0 +1,120 @@
+<!-- TRAVEL AGENCY APP -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- nav>div>img+p -->   
+	
+	<!-- navigacioni u kojem je div koji sadrzi logo + tekst -->
+    <nav>
+        <div class="logo">
+            <img src="slike/favicon.svg" alt="">
+            <p>GoGoTravel</p>
+        </div>
+        <!-- ul>li*4>a -->   
+		
+		<!-- pored tog diva je ul lista sa linkovima u sebi -->
+        <ul>
+            <li><a href="">Početna</a></li>
+            <li><a href="">Smeštaj</a></li>
+            <li><a href="">Letovi</a></li>
+            <li><a href="">Iznajmljivanje auta</a></li>
+        </ul>
+        <!-- div.profile>a*2 -->    
+		
+		<!-- pored liste je div sa login i signin linkovima -->
+        <div class="profile">
+            <a href="">
+                Log in |
+            </a>
+            <a href="">
+                Sign in
+            </a>
+        </div>
+    </nav>
+    <!-- header>form>div*4>label+input -->   
+	
+	<!-- sledi forma koja u sebi ima 4 diva a svaki od nih ima label i input -->
+    <header>
+        <form action="">
+            <div>
+                <label for="">Lokacija</label>
+                <input type="text" placeholder="Gde idete?">
+            </div>
+            <div>
+                <label for="">Datum dolaska</label>
+                <input type="date" placeholder="Datum dolaska">
+            </div>
+            <div>
+                <label for="">Datum odlaska</label>
+                <input type="date" placeholder="Datum odlaska">
+            </div>
+            <div>
+                <label for="">Broj osoba</label>
+                <input type="number" name="" id="">
+            </div>
+            <button><i class="fas fa-search"></i></button>
+        </form>
+    </header>
+    <!-- section>h1+div>div*3>img+p --> 
+	
+	<!-- zatim sledi sekcija sa H1 i divom koji sadrže 3 diva sa slikom i tekstom ispod  -->
+    <section>
+        <h1>Inspiracija za vaše sledeće putovanje</h1>
+        <div class="destination">
+            <div>
+                <img src="slike/Dubai.jpeg" alt="">
+                <p>Dubai</p>
+            </div>
+            <div>
+                <img src="slike/London.jpeg" alt="">
+                <p>London</p>
+            </div>
+            <div>
+                <img src="slike/Berlin.jpeg" alt="">
+                <p>Berlin</p>
+            </div>
+        </div>
+    </section>
+    <!-- footer>iframe+div>p*2>span --> 
+	
+	<!-- futer sadrži iframe i div, a taj div sadrži paragrad gde je naslov u spanovima i ispod tekst sa brejkovima -->
+    <footer>
+
+        <iframe width="373" height="260" id="gmap_canvas"
+            src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        <div>
+            <p> <span>Podrška:</span> <br>
+                Centar za pomoć <br>
+                Informacije o bezbednosti<br>
+                Opcije otkazivanja<br>
+                Naš odgovor na COVID-19<br>
+                Podržite osobe s invaliditetom<br>
+                Prijavite problem u okolini<br>
+            </p>
+            <p> <span>Osnovni podaci:</span> <br>
+                Pres centar<br>
+                Više o novim funkcijama<br>
+                Pismo od naših osnivača<br>
+                Zaposlenje<br>
+                Investitori<br>
+            </p>
+        </div>
+
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Luxurious Roman", cursive;
+  color: #f2f2dd;
+}
+
+nav {
+  background: #0e1538;
+  padding: 1em 2em;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .logo {
+  display: flex;
+  width: 10%;
+}
+nav .logo p {
+  font-size: 2em;
+}
+nav .logo img {
+  width: 25%;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-self: end;
+}
+nav ul li a {
+  text-decoration: none;
+  margin-left: 2em;
+}
+nav ul li:hover {
+  background: #f2f2dd;
+}
+nav ul li:hover a {
+  color: #0e1538;
+}
+nav .profile {
+  background: white;
+  padding: 0.7%;
+  border-radius: 20px;
+  height: 2em;
+  padding-top: 0.3em;
+}
+nav .profile a {
+  color: #0e1538;
+  text-decoration: none;
+}
+
+header {
+  background: url("../slike/background.jpeg");
+  background-size: cover;
+  height: 35em;
+  width: 100%;
+  padding: 7% 25%;
+}
+header form {
+  margin: 0 auto;
+  background: white;
+  padding: 0.5em;
+  border-radius: 40px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+header form div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header form div label {
+  color: #0e1538;
+  text-align: center;
+}
+header form div input {
+  display: block;
+  height: 5em;
+  border-radius: 35px;
+  color: #0e1538;
+  border: 1px solid gray;
+  padding: 0.5em;
+}
+header form button {
+  height: 5em;
+  background: #fb5b5b;
+  color: white;
+  border: none;
+  padding: 2em;
+  border-radius: 40px;
+}
+
+section {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+section h1 {
+  color: #0e1538;
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 1em;
+}
+section .destination {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+section .destination div {
+  width: 30%;
+  box-shadow: 2px 2px 5px #7079f7;
+  border-radius: 25px;
+  margin: 1em;
+  padding: 1em;
+  transition: transform 1s;
+}
+section .destination div img {
+  width: 70%;
+  height: 22em;
+  border-radius: 25px;
+  transition: transform 2s;
+}
+section .destination div img:hover {
+  transform: scale(1.3) rotate3d(0, 1, 0, 3.142rad);
+}
+section .destination div p {
+  font-size: 1.5em;
+  color: #0e1538;
+}
+
+footer {
+  background: #0e1538;
+  display: flex;
+  padding: 2em 15%;
+  flex-wrap: wrap;
+}
+footer div {
+  display: flex;
+}
+footer div p {
+  font-size: 1.1em;
+  vertical-align: top;
+  margin: 1em;
+}
+footer div p span {
+  font-size: 1.3em;
+}
+
+@media screen and (max-width: 950px) {
+  nav .logo {
+    width: 25%;
+  }
+  nav ul {
+    width: 60%;
+  }
+
+  header {
+    padding: 7% 2%;
+  }
+  header form {
+    margin-left: 1%;
+    width: 98%;
+  }
+  header form div {
+    width: 22.5%;
+  }
+  header form div input {
+    width: 100%;
+  }
+
+  section .destination div {
+    width: 39%;
+  }
+
+  footer {
+    height: 33em;
+    flex-direction: column-reverse;
+  }
+  footer div,
+footer iframe {
+    text-align: center;
+    width: 100%;
+  }
+  footer div p {
+    text-align: left;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 650px) {
+  nav {
+    height: auto;
+  }
+  nav .logo {
+    position: absolute;
+    top: 1em;
+  }
+  nav ul {
+    width: 100%;
+    text-align: center;
+    margin-top: 2em;
+  }
+  nav ul li {
+    width: 100%;
+    margin: 1.5em;
+  }
+  nav .profile {
+    position: absolute;
+    right: 2em;
+    top: 1em;
+  }
+
+  header form div {
+    display: block;
+    padding: 0.5em;
+    width: 100%;
+  }
+  header form div input {
+    width: 100%;
+  }
+  header form div label {
+    text-align: left;
+  }
+  header form button {
+    width: 100%;
+  }
+
+  section .destination div {
+    width: 90%;
+  }
+
+  footer {
+    padding: 1em 2em;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

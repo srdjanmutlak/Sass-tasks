@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif&family=Shizuru&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Serif", serif;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+header {
+  background-color: rgba(171, 191, 240, 0.9);
+}
+
+.holder {
+  width: 80%;
+  height: 50px;
+  display: flex;
+}
+
+.logo_text {
+  flex-grow: 1;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.logo_text img {
+  padding-right: 15px;
+  height: 100%;
+}
+.logo_text p {
+  display: none;
+}
+
+.links {
+  flex-grow: 3;
+  text-transform: capitalize;
+}
+.links ul {
+  height: 50px;
+  display: flex;
+  list-style: none;
+}
+.links ul li {
+  flex-grow: 1;
+  position: relative;
+}
+.links ul li a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+}
+.links ul li:hover {
+  background-color: rgba(234, 240, 155, 0.9);
+}
+
+.holderMain {
+  width: 99%;
+  margin: 0 auto;
+  height: 500px;
+  display: flex;
+}
+
+.mainTitle_ponuda {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 25px;
+}
+.mainTitle_ponuda h1 {
+  color: #1b68df;
+  font-size: 80px;
+}
+.mainTitle_ponuda p {
+  letter-spacing: 2px;
+}
+
+.mainPonuda {
+  margin-top: 10px;
+  box-shadow: 1px 1px 5px 1px black;
+  border-radius: 5px;
+  width: 70%;
+  display: flex;
+  height: 30px;
+}
+.mainPonuda input {
+  width: 70%;
+  border-radius: 5px;
+  border: none;
+}
+.mainPonuda input::placeholder {
+  padding-left: 15px;
+}
+.mainPonuda button {
+  width: 28%;
+  margin: 3px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(234, 240, 155, 0.9);
+}
+
+.main_image {
+  width: 50%;
+  background-image: url(../assets/slike/background-food.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.mainContainer {
+  width: 100%;
+  height: 500px;
+  background-color: #f7f7f7;
+  margin: 15px;
+}
+
+.mainHolder {
+  width: 80%;
+  height: 80%;
+  padding-top: 50px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+}
+.mainHolder h2 {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translatex(-50%);
+}
+
+.kitchens {
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+.kitchen {
+  width: 250px;
+  height: 281px;
+}
+.kitchen img {
+  width: 250px;
+  transition: width 1s;
+}
+
+.kitchen:hover img {
+  width: 300px;
+}
+.kitchen:hover h3 {
+  display: none;
+}
+
+.addressContainer {
+  width: 100%;
+}
+
+.addressHolder {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.map {
+  flex-grow: 1;
+  text-align: right;
+  padding: 15px;
+}
+
+.gridContainer {
+  flex-grow: 1;
+  padding: 15px;
+}
+
+.grid {
+  width: 100%;
+  height: 350px;
+  display: grid;
+  grid-template: "one two three" "four five six" "seven eight nine" "ten ten ten";
+  align-items: end;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px;
+  justify-content: space-evenly;
+}
+
+.one {
+  grid-area: one;
+}
+
+.two {
+  grid-area: two;
+}
+
+.three {
+  grid-area: three;
+}
+
+.four {
+  grid-area: four;
+}
+
+.five {
+  grid-area: five;
+}
+
+.six {
+  grid-area: six;
+}
+
+.seven {
+  grid-area: seven;
+}
+
+.eight {
+  grid-area: eight;
+}
+
+.nine {
+  grid-area: nine;
+}
+
+.ten {
+  grid-area: ten;
+}
+
+.footContainer {
+  display: flex;
+  background-color: chartreuse;
+}
+.footContainer p {
+  line-height: 50px;
+}
+
+.company {
+  flex-grow: 1;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.company img {
+  padding-right: 15px;
+  height: 40px;
+}
+
+.copyright {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.footerHolder {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+}
+
+@media screen and (max-width: 1250px) {
+  .logo_text {
+    justify-content: left;
+  }
+  .logo_text p {
+    display: inline;
+  }
+
+  .mainPonuda {
+    display: none;
+  }
+}
+@media screen and (max-width: 1250px) {
+  header {
+    width: 100%;
+  }
+
+  .holder {
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+  }
+  .holder .logo_text {
+    height: 50px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .mainTitle_ponuda {
+    justify-content: center;
+  }
+  .mainTitle_ponuda h1 {
+    font-size: 30px;
+  }
+
+  .addressHolder {
+    width: 100%;
+    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+
+  .gridContainer {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 750px) {
+  .mainContainer {
+    margin: 0 auto;
+    height: auto;
+  }
+  .mainContainer h2 {
+    display: none;
+  }
+
+  .kitchens {
+    flex-direction: column;
+    margin: 25px;
+    width: 100%;
+    padding-bottom: 15px;
+  }
+
+  .kitchen {
+    width: 100%;
+  }
+  .kitchen img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .links {
+    width: 100%;
+  }
+  .links ul {
+    flex-direction: column;
+    height: auto;
+  }
+  .links ul li {
+    height: 50px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .mainContainer {
+    display: none;
+  }
+
+  .footContainer {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

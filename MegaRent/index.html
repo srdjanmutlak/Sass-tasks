@@ -1,0 +1,146 @@
+<!-- MegaRent aplikacija -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="slike/favicon.png" type="image/x-icon">
+    <title>MegaRent</title>
+</head>
+
+<body>
+    <!-- header>nav>div+ul>li*5--> 
+	
+	<!-- heder sadrži navigacioni koji sadrži div u kom je MegaRent i ul sa 5 li-jeva -->
+    
+	<header>
+        <nav>
+		<!-- u ovom divu razdvajamo spanom Mega i Rent da bi ga upotrebili opet -->
+            <div><span class="mega">Mega</span><span class="rent">Rent</span></div>
+            <ul>
+                <li>HOME</li>
+                <li>ABOUT US</li>
+                <li>LOCATIONS</li>
+                <li>CATALOG</li>
+                <li>TERMS OF SERVICE</li>
+            </ul>
+        </nav>
+
+        <!-- div.srdjan>h1+h2 --> 
+		
+		<!-- posle navigacionog stvaramo div sa h1 i h2 koji stoji u sredini -->
+		
+        <div class="srdjan">
+            <h1>Welcome to MegaRent</h1>
+            <h2>Your best online rent-a-car.</h2>
+        </div>
+    </header>
+    <!-- section.catalog>h1+div.container>div*4>img+p+button -->
+	
+	<!-- stvaramo sekciju katalog koji sadrži naslov i div kontejner koji ima u sebi 4 diva, svaki ima sliku, tekst i dugme -->
+	<!-- stvaljamo ih sve u kontejner zbog fleks mogucnosti -->
+	
+    <section class="catalog">
+        <h1>SELECTION FROM OUR CATALOG</h1>
+        <div class="container">
+            <div>
+                <img src="slike/car_civil.png" alt="">
+                <p>Civil vehicle</p>
+                <button>VIEW OFFERS</button>
+            </div>
+            <div>
+                <img src="slike/car_sport.png" alt="">
+                <p>Sport cars</p>
+                <button>VIEW OFFERS</button>
+            </div>
+            <div>
+                <img src="slike/car_suv.png" alt="">
+                <p>SUVs</p>
+                <button>VIEW OFFERS</button>
+            </div>
+            <div>
+                <img src="slike/car_van.png" alt="">
+                <p>Transport vehicles</p>
+                <button>VIEW OFFERS</button>
+            </div>
+        </div>
+    </section>
+    <!-- section.pricing>h1+table -->
+	
+	<!-- sledeća sekcija sadrži naslov i tabelu -->
+	
+    <section class="pricing">
+        <h1>PRICING</h1>
+		
+        <button>VIEW PRICING</button>
+		<!-- dugme nije vidljivo na velikom ekranu -->
+		
+        <table>
+            <!-- thead>tr>th*4 -->   <!-- tabela ima thead sa jednim tr-om i 4 th-a i svi su crveni-->
+            <thead>
+                <tr>
+                    <th>Car type</th>
+                    <th>Day</th>
+                    <th>Week</th>
+                    <th>Month</th>
+                </tr>
+            </thead>
+            <!-- tbody>tr*4>th+td*3 --> 
+			
+			<!-- tbody ima 4 tr-a, svaki sadrži po jedan th(tip auta) i 3 td-a(cena renatanja) -->
+            <tbody>
+                <tr>
+                    <th>Civic</th>
+                    <td>10</td>
+                    <td>20</td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <th>Sport</th>
+                    <td>50</td>
+                    <td>100</td>
+                    <td>400</td>
+                </tr>
+                <tr>
+                    <th>SUV</th>
+                    <td>70</td>
+                    <td>120</td>
+                    <td>500</td>
+                </tr>
+                <tr>
+                    <th>Van</th>
+                    <td>100</td>
+                    <td>300</td>
+                    <td>1000</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <!--footer>h2+div.container>div*2-->
+	
+	<!-- futer sadrži h2 i div kontejner koji sadrži 2 diva, drugi div brišemo i dodajemo iframe -->
+
+    <footer>
+        <h2><span class="mega">Mega</span>Rent</h2>
+        <div class="container">
+            <div>
+			    <!-- ubacujemo 3 paragrafa u ovaj div -->
+
+                <p>North Road 3b</p>
+                <p>East London</p>
+                <p>United Kingdom</p>
+            </div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10011.189380632133!2d19.815483125389576!3d45.241827969726394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ssr!2srs!4v1672248342752!5m2!1ssr!2srs"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
+</body>
+
+</html>

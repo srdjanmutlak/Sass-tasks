@@ -1,0 +1,259 @@
+@import 'vars';
+@import 'mixins';
+
+@include main;
+
+header {
+    background-image: url("../slike/background.jpg");
+
+    height: 75vh;
+    padding: 20px;
+
+    nav {
+        width: 70%;
+        margin: 0 auto;
+        padding: 0.5em;
+
+        background-color: white;
+
+        display: flex;
+        justify-content: space-between;
+
+        @include mega-rent;
+
+        ul {
+            list-style: none;
+
+            display: flex;
+            gap: 15px;
+            align-items: flex-end;
+        }
+    }
+
+    // div.srdjan {
+    div:last-child {
+        padding: 200px;
+
+        h1,
+        h2 {
+            text-align: center;
+            color: white;
+            font-family: $logo_font;
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        h1 {
+            border-bottom: 1px solid $main_red;
+        }
+    }
+}
+
+section.catalog {
+    @include section-format;
+    background-color: $grey_background;
+
+    div.container {
+        display: flex;
+        justify-content: space-around;
+
+        width: 90%;
+        margin: 0 auto;
+        padding: 20px;
+
+        div {
+            width: 20%;
+
+            img {
+                width: 100%;
+            }
+
+        }
+    }
+}
+
+button {
+    background-color: $main_red;
+    color: white;
+
+    padding: 4px 35px;
+    margin: 4px;
+    border: none;
+}
+
+section.pricing {
+    @include section-format;
+
+    button {
+        display: none;
+    }
+
+    table {
+        margin: 30px auto;
+        width: 60%;
+        border-collapse: collapse;
+
+        th,
+        td {
+            padding: 0.8em 1.2em;
+        }
+
+        thead {
+            background-color: $main_red;
+
+            th {
+                color: white;
+            }
+
+            th:first-child {
+                background-color: $red_dark;
+            }
+        }
+
+        tbody th {
+            background-color: $grey_background;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid grey;
+        }
+    }
+}
+
+footer {
+    background-color: black;
+    padding: 15px;
+
+    @include mega-rent;
+
+    h2 {
+        border-bottom: 1px solid $main_red;
+        @include centriraj;
+    }
+
+    div.container {
+        display: flex;
+        justify-content: space-between;
+
+        padding: 15px;
+
+        @include centriraj;
+
+        p {
+            font-style: italic;
+            color: white;
+        }
+
+        iframe {
+            width: 30%;
+            height: 300px;
+            margin-right: 40px;
+        }
+    }
+}
+
+@include srednji-ekran {
+    header {
+        background-size: cover;
+
+        nav {
+            width: 100%;
+        }
+
+        // div.srdjan {
+        div:last-child {
+            padding: 200px 20px;
+
+            h1,
+            h2 {
+                width: 90%;
+            }
+
+        }
+    }
+
+    section.catalog {
+        div.container {
+            flex-wrap: wrap;
+            width: 100%;
+
+            div {
+                width: 40%;
+            }
+        }
+    }
+
+    footer {
+        text-align: center;
+        h2 {
+            width: 60%;
+        }
+        div.container {
+            flex-direction: column;
+            align-items: center;
+            row-gap: 25px;
+
+            iframe {
+                width: 60%;
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+@include mali-ekran {
+    header {
+        padding: 20px 5px;
+        background: black;
+        height: auto;
+
+        nav {
+            flex-direction: column;
+
+            ul {
+                flex-direction: column;
+                align-items: center;
+                li {
+                    margin: 10px;
+                }
+            }
+        }
+        div:last-child {
+            padding: 50px 10px 25px 10px;
+            h1 {
+                font-size: 48px;
+            }
+        }
+    }
+
+    section.catalog {
+        div.container {
+
+            div {
+                width: 80%;
+
+            }
+        }
+    }
+
+    button {
+        padding: 20px 80px;
+    }
+
+    section.pricing {
+        h1 {
+            margin: 30px;
+        }
+        button {
+            display: block;
+            margin: 0 auto;
+        }
+        table {
+            display: none;
+        }
+    }
+
+    footer div.container iframe {
+        width: 80%;
+    }
+}

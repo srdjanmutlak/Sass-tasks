@@ -1,0 +1,320 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Open Sans Condensed";
+}
+
+section {
+  padding: 2em 7em;
+  text-align: center;
+}
+section:before, section:after {
+  content: "";
+  display: table;
+}
+section:after {
+  clear: both;
+}
+
+h2 {
+  color: #fab95b;
+  background-color: #122631;
+  width: 30%;
+  padding: 0.5em;
+  margin: 0 auto;
+}
+
+nav {
+  background-color: #f5564e;
+  width: 100%;
+}
+nav ul {
+  list-style-type: none;
+}
+nav ul li {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+}
+nav ul li:hover {
+  background-color: #fff;
+}
+nav ul li:hover a {
+  color: #f5564e;
+}
+nav ul a {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+main {
+  padding: 0 2em;
+  background-image: url("../slike/main_background.jpg");
+  background-size: 100% 100%;
+  height: 100vh;
+  position: relative;
+}
+main #logo {
+  background-color: #f5564e;
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  top: 0;
+  right: 2em;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Staatliches";
+  font-weight: normal;
+}
+
+h1 {
+  color: #fab95b;
+  text-transform: uppercase;
+  font-size: 4em;
+}
+
+h3 {
+  color: #fff;
+}
+
+.intro-text {
+  position: absolute;
+  left: 2em;
+  bottom: 15%;
+}
+
+.container {
+  margin: 2em auto;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.container:before, .container:after {
+  content: "";
+  display: table;
+}
+.container:after {
+  clear: both;
+}
+
+.key-box {
+  background-image: url("../slike/key.png");
+  background-size: 100% 100%;
+  background-color: #f5564e;
+  flex-basis: 12%;
+  height: 100px;
+  margin-left: 0.5em;
+  margin-top: 0.5em;
+}
+.key-box p {
+  display: none;
+}
+.key-box:hover {
+  background-image: none;
+  flex-basis: 18%;
+  border-left: 4em solid #000;
+  cursor: pointer;
+}
+.key-box:hover p {
+  display: block;
+  font-size: 4.5em;
+  color: #fff;
+}
+
+#testimonials {
+  background-color: #e8e2db;
+}
+#testimonials p {
+  margin: 2.5em 0;
+  text-align: justify;
+  column-count: 3;
+}
+
+#contact,
+.map {
+  margin-top: 2em;
+}
+
+#contact {
+  float: left;
+  width: 49%;
+  text-align: left;
+}
+
+form {
+  padding: 1em;
+  background-color: #e8e2db;
+  border-radius: 3px;
+  width: 80%;
+}
+form input,
+form textarea,
+form select,
+form #submit {
+  padding: 0.3em;
+  border-radius: 3px;
+  border: none;
+}
+form select {
+  width: 13%;
+}
+form #name {
+  width: 41%;
+}
+form #email,
+form textarea,
+form #submit {
+  margin-top: 1em;
+  width: 96%;
+}
+form #submit {
+  background-color: #f5564e;
+  color: #fff;
+}
+
+.map {
+  float: right;
+  width: 50%;
+  text-align: right;
+}
+.map iframe {
+  width: 70%;
+}
+
+footer {
+  background-color: #f5564e;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+
+.btn {
+  padding: 1em;
+  color: #fff;
+  background-color: #f5564e;
+  text-decoration: none;
+  display: none;
+  width: 20%;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 890px) {
+  h2 {
+    width: 40%;
+  }
+
+  section {
+    padding: 2em;
+  }
+
+  main {
+    padding: 0;
+    height: 70vh;
+  }
+  main #logo {
+    right: 0;
+  }
+
+  .intro-text {
+    text-align: center;
+    top: 60%;
+    left: 0;
+    width: 100%;
+  }
+
+  #testimonials p {
+    display: none;
+  }
+  #testimonials .btn {
+    margin-top: 3em;
+    display: block;
+  }
+
+  #contact,
+.map {
+    width: 100%;
+    text-align: center;
+  }
+
+  form {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 570px) {
+  section {
+    padding: 2em 0.5em;
+  }
+
+  main {
+    height: 50vh;
+  }
+  main #logo {
+    display: none;
+  }
+
+  nav ul {
+    width: 100%;
+    text-align: center;
+  }
+  nav ul li {
+    width: 19%;
+    margin: 0;
+  }
+
+  form {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+
+  #options .key-box {
+    display: none;
+  }
+
+  .btn {
+    display: block;
+    margin-top: 0;
+    padding: 0.5em;
+  }
+}
+@media only screen and (max-width: 490px) {
+  nav ul li {
+    width: 100%;
+  }
+
+  main {
+    background-image: none;
+    background-color: #000;
+    height: fit-content;
+  }
+
+  .intro-text {
+    padding: 2em;
+    position: relative;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    width: 60%;
+  }
+
+  .btn {
+    width: 40%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

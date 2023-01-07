@@ -1,0 +1,315 @@
+@import "mixins";
+@import "vars";
+
+@include main;
+
+section {
+  padding: 2em 7em;
+  text-align: center;
+  @include clearfix;
+}
+
+h2 {
+  color: $color-titles;
+  background-color: $color-font;
+  width: 30%;
+  padding: 0.5em;
+  margin: 0 auto;
+}
+
+nav {
+  background-color: $color-red;
+  width: 100%;
+  ul {
+    list-style-type: none;
+    li {
+      display: inline-block;
+      padding: 0.5em 1.5em;
+      &:hover {
+        background-color: #fff;
+        a {
+          color: $color-red;
+        }
+      }
+    }
+    a {
+      color: #fff;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+}
+
+main {
+  padding: 0 2em;
+  background-image: url("../slike/main_background.jpg");
+  background-size: 100% 100%;
+  height: 100vh;
+  position: relative;
+
+  #logo {
+    background-color: $color-red;
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    top: 0;
+    right: 2em;
+  }
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Staatliches";
+  font-weight: normal;
+}
+
+h1 {
+  color: $color-titles;
+  text-transform: uppercase;
+  font-size: 4em;
+}
+
+h3 {
+  color: #fff;
+}
+
+.intro-text {
+  position: absolute;
+  left: 2em;
+  bottom: 15%;
+}
+
+.container {
+  margin: 2em auto;
+  @include clearfix;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.key-box {
+  background-image: url("../slike/key.png");
+  background-size: 100% 100%;
+  background-color: $color-red;
+  flex-basis: 12%;
+  height: 100px;
+  margin-left: 0.5em;
+  margin-top: 0.5em;
+
+  p {
+    display: none;
+  }
+
+  &:hover {
+    background-image: none;
+    flex-basis: 18%;
+    border-left: 4em solid #000;
+    cursor: pointer;
+
+    p {
+      display: block;
+      font-size: 4.5em;
+      color: #fff;
+    }
+  }
+}
+
+#testimonials {
+  background-color: $color-gray;
+
+  p {
+    margin: 2.5em 0;
+    text-align: justify;
+    column-count: 3;
+  }
+}
+
+#contact,
+.map {
+  margin-top: 2em;
+}
+
+#contact {
+  float: left;
+  width: 49%;
+  text-align: left;
+}
+
+form {
+  padding: 1em;
+  background-color: $color-gray;
+  border-radius: 3px;
+  width: 80%;
+
+  input,
+  textarea,
+  select,
+  #submit {
+    padding: 0.3em;
+    border-radius: 3px;
+    border: none;
+  }
+  select {
+    width: 13%;
+  }
+  #name {
+    width: 41%;
+  }
+  #email,
+  textarea,
+  #submit {
+    margin-top: 1em;
+    width: 96%;
+  }
+
+  #submit {
+    background-color: $color-red;
+    color: #fff;
+  }
+}
+
+.map {
+  float: right;
+  width: 50%;
+  text-align: right;
+
+  iframe {
+    width: 70%;
+  }
+}
+
+footer {
+  background-color: $color-red;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+
+.btn {
+  padding: 1em;
+  color: #fff;
+  background-color: $color-red;
+  text-decoration: none;
+  display: none;
+  width: 20%;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 890px) {
+  h2 {
+    width: 40%;
+  }
+
+  section {
+    padding: 2em;
+  }
+  main {
+    padding: 0;
+    height: 70vh;
+
+    #logo {
+      right: 0;
+    }
+  }
+
+  .intro-text {
+    text-align: center;
+    top: 60%;
+    left: 0;
+    width: 100%;
+  }
+
+  #testimonials {
+    p {
+      display: none;
+    }
+    .btn {
+      margin-top: 3em;
+      display: block;
+    }
+  }
+
+  #contact,
+  .map {
+    width: 100%;
+    text-align: center;
+  }
+
+  form {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  section {
+    padding: 2em 0.5em;
+  }
+  main {
+    height: 50vh;
+    #logo {
+      display: none;
+    }
+  }
+
+  nav ul {
+    width: 100%;
+    text-align: center;
+    li {
+      width: 19%;
+      margin: 0;
+    }
+  }
+
+  form {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+
+  #options {
+    .key-box {
+      display: none;
+    }
+  }
+
+  .btn {
+    display: block;
+    margin-top: 0;
+    padding: 0.5em;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  nav {
+    ul li {
+      width: 100%;
+    }
+  }
+  main {
+    background-image: none;
+    background-color: #000;
+    height: fit-content;
+  }
+  .intro-text {
+    padding: 2em;
+    position: relative;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    width: 60%;
+  }
+
+  .btn {
+    width: 40%;
+  }
+}
