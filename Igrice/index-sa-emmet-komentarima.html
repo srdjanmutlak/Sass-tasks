@@ -1,0 +1,167 @@
+<!-- IGRICE ZA SVE UZASTE -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Side</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif:ital@0;1&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="slike/game-console.svg" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- header>img+div>h1+h2 --> 
+  
+  <!-- header sadrži sliku joystika plus div koji ima mali i veliki naslov -->
+  <header>
+    <img src="slike/logo.png" alt="food image">
+    <div>
+      <h1>Igrice za sve uzraste</h1>
+      <h2>Broj telefona: 021 55 56 660</h2>
+    </div>
+  </header>
+  <!-- nav>img+ul>li*5>a --> 
+  
+  <!-- sledi navigacioni bar koji sadrži sličicu i ul listu sa 5 li linkova, jedna "li" je skrivena i trebace za mali ekran -->
+  <nav>
+    <img src="slike/favicon.svg" alt="Mesara" class="logo">
+    <ul>
+      <li class="kategorija"><a href="#">Kategorije</a></li>
+      <li><a href="#">Playstation</a></li>
+      <li><a href="#">Nintendo</a></li>
+      <li><a href="#">XBox</a></li>
+      <li><a href="#">PC</a></li>
+    </ul>
+  </nav>
+  
+  <!-- zatim slede dve sekcije, jedna sa inputima i druga sa igrama -->
+  
+  <!-- section>form>(label+input)*5 --> <!-- sekcija sadrži formu koja sadrži 5 labela i inputa  -->
+  
+  <!-- dodajemo 2 range iputa i submit input -->
+  <section>
+    <form class="pretraga" action="index.html" method="post">
+      <label for="">Naziv igrice</label>
+      <input type="text" name="" value="">
+      <label for="">Naziv konzole</label>
+      <input type="text" name="" value="">
+      <label for="">Uzrast</label>
+      <input type="text" name="" value="">
+      <label for="">Žanr</label>
+      <input type="text" name="" value="">
+      <label for="">Cena</label>
+      <input type="range" name="" value="">
+      <label for="">Ocena</label>
+      <input type="range" name="" value="">
+      <input type="submit" name="" value="Pretraži">
+    </form>
+    <!-- section.games>div.column>img+div.stars>span*5 -->
+	
+	<!-- u sekciji igre imamo div za column i u njemu div za zvezde, zvezde moraju biti u span-u  -->
+	
+    <section class="games">
+      <div class="column">
+
+        <img src="slike/dark-souls.jpeg" alt="Najkvalitetnije">
+
+        <div class="stars">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+        </div>
+
+        <h3>Dark Souls</h3>  <!-- dodajemo naziv igre ispod zvezdica -->
+
+      </div>
+      <!-- div.column>img+div.stars>span*5 --> 
+	  
+	  <!-- citav proces ponovimo -->
+	  
+      <div class="column">
+
+        <img src="slike/zelda.jpeg" alt="Najzdravije">
+
+        <div class="stars">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+        </div>
+
+        <h3>Zelda: Breath of the Wild</h3>
+
+      </div>
+      <!-- div.column>img+div.stars>span*5 --> 
+	  
+	  <!-- citav proces ponovimo -->
+      <div class="column">
+        <img src="slike/fifa-21.jpeg" alt="Najukusnije">
+        <div class="stars">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+        </div>
+
+        <h3>Fifa 2021</h3>
+
+      </div>
+    </section>
+  </section>
+  <!-- section.contact>div.links>ul.quicklinks>li*10>a -->
+  
+  <!-- zatim pravimo kontakt sekciju koja sadrži div sa ul listom gde imamo 10 li-jeva i svaki ima a link -->
+  
+  <section class="contact">
+    <div class="links">
+      <ul class="quickLinks">
+        <li><a href="#">Ko smo mi?</a></li>
+        <li><a href="#">Kontaktirajte nas</a></li>
+        <li><a href="#">Izjava o privatnosti</a></li>
+        <li><a href="#">Pravilnik o utiscima</a></li>
+        <li><a href="#">Kako radi</a></li>
+        <li><a href="#">Da li imate objekat?</a></li>
+        <li><a href="#">Pravila o zaštiti ličnih podataka</a></li>
+        <li><a href="#">Objekti</a></li>
+        <li><a href="#">Najčešće postavljena pitanja</a></li>
+        <li><a href="#">Načini plaćanja</a></li>
+      </ul>
+    </div>
+    <!-- div.map>iframe+address>p*2 -->
+	
+	<!-- pored diva sa linkovima imamo div sa mapom koji sadrži i adresu koja sadrži 2 paragrafa -->
+	
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d22466.120571510546!2d19.83742865!3d45.262652249999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2srs!4v1610298574803!5m2!1sen!2srs"
+        width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+        tabindex="0"></iframe>
+      <address>
+        <p>Futoški put BB</p>
+        <p>21000 Novi Sad</p>
+      </address>
+    </div>
+  </section>
+  <!-- footer>div.logo>img+p -->
+  
+  <!-- futer sadrži div koji sadrži sliku i tekst pored slike -->
+  
+  <footer>
+    <div class="logo">
+      <img src="slike/favicon.svg" alt="">
+      <p>Game Side | Copyright &copy; 2021</p>
+    </div>
+  </footer>
+</body>
+
+</html>

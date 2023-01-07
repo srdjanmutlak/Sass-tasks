@@ -1,0 +1,328 @@
+@import "variables";
+@import "mixins";
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family;
+  color: $color-font;
+}
+
+.nav-bar {
+  background-color: $color-dark-blue;
+
+  .nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+
+    @include small {
+      flex-direction: column;
+    }
+
+    .list-item {
+      padding: 15px 30px;
+      margin-left: 20px;
+
+      @include small {
+        padding: 20px 30px;
+      }
+
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+
+      a {
+        color: $color-font;
+        text-decoration: none;
+        color: $color-lightgrey-one;
+      }
+    }
+
+    .bg-red {
+      background-color: $color-red;
+
+      @include small {
+        order: -1;
+        width: 100%;
+        margin: 0;
+      }
+
+      img {
+        height: 30px;
+      }
+    }
+  }
+}
+
+header {
+  background-image: url(../slike/intro.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  height: 70vh;
+  color: $color-lightgrey-one;
+
+  @include small {
+    background: black;
+    height: fit-content;
+  }
+
+  .header-text {
+    background-color: rgba($color-dark-blue, 0.5);
+    width: 100%;
+    align-self: flex-end;
+    text-align: center;
+    padding: 10px 0;
+
+    h1 {
+      font-size: 2.5rem;
+      color: white;
+
+      @include small {
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
+.one {
+  padding: $padding-sections;
+  text-align: end;
+  width: 80%;
+  margin: $margin-center;
+
+  @include medium {
+    width: 90%;
+  }
+
+  .btn {
+    @include btn;
+  }
+}
+
+.two {
+  background-color: $color-lightgrey-two;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: $padding-sections;
+
+  .two-items {
+    width: 90%;
+    margin: $margin-center;
+    display: flex;
+    justify-content: space-evenly;
+    padding: $padding-sections;
+
+    &.order-change {
+      @include small {
+        .text {
+          order: 1;
+        }
+      }
+    }
+
+    @include small {
+      padding: 10px 0;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    &:hover {
+      .img {
+        opacity: 1;
+      }
+
+      .text {
+        visibility: visible;
+      }
+    }
+
+    .img {
+      opacity: 0.5;
+      @include small {
+        opacity: 1;
+        margin-bottom: 10px;
+      }
+
+      img {
+        border-radius: 50%;
+        height: 250px;
+      }
+    }
+
+    .text {
+      visibility: hidden;
+      padding: 0 20px;
+      align-self: center;
+
+      @include small {
+        visibility: visible;
+        width: 100%;
+        text-align: center;
+      }
+
+      h3 {
+        color: black;
+      }
+    }
+  }
+}
+
+.three {
+  padding: $padding-sections;
+
+  h2 {
+    @include headings;
+  }
+
+  p {
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 500;
+    @include small {
+      margin-bottom: 20px;
+    }
+  }
+
+  table {
+    border-collapse: collapse;
+    text-align: center;
+    margin: $margin-center;
+
+    @include small {
+      display: none;
+    }
+
+    td,
+    th {
+      padding: 10px 50px;
+      border: 1px solid $color-lightgrey-one;
+    }
+
+    .empty {
+      border: none;
+    }
+
+    .bg-red {
+      background-color: $color-red;
+      color: white;
+      border: 1px solid $color-lightgrey-one;
+    }
+
+    .bg-dark {
+      background-color: $color-dark-blue;
+      color: white;
+      border-bottom: 1px solid $color-lightgrey-one;
+    }
+  }
+
+  .hidden {
+    display: none;
+    @include btn;
+    @include small {
+      display: block;
+      margin: $margin-center;
+    }
+  }
+}
+
+.four {
+  padding: $padding-sections;
+  background-color: $color-lightgrey-two;
+
+  h2 {
+    @include headings;
+  }
+
+  .four-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: $margin-center;
+
+    @include small {
+      width: 100%;
+    }
+
+    @include medium {
+      flex-wrap: wrap;
+    }
+
+    iframe {
+      width: 40%;
+
+      @include medium {
+        width: 60%;
+        margin: $margin-center;
+        margin-bottom: 20px;
+      }
+    }
+
+    form {
+      width: 55%;
+      height: 250px;
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 30px;
+      flex-wrap: wrap;
+      background-color: $color-red;
+
+      @include small {
+        width: 100%;
+      }
+
+      @include medium {
+        width: 100%;
+        margin: $margin-center;
+      }
+
+      .form-item {
+        padding: 5px;
+      }
+
+      .f-one {
+        flex: 0 0 30%;
+
+        @include small {
+          flex: 0 0 100%;
+        }
+      }
+
+      .f-two {
+        flex: 0 0 65%;
+
+        @include small {
+          flex: 0 0 100%;
+        }
+      }
+
+      .f-three,
+      .f-foure {
+        flex: 0 0 100%;
+      }
+    }
+  }
+}
+
+footer {
+  background-color: $color-dark-blue;
+  text-align: center;
+  color: white;
+  padding: 15px;
+
+  span {
+    color: $color-red;
+  }
+}

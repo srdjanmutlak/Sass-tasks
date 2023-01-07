@@ -1,0 +1,266 @@
+@import "vars";
+@import "mixins";
+
+@include main;
+
+nav {
+    padding: 0.5em;
+    background-color: $dark-green;
+    text-align: center;
+
+    ul {
+        list-style: none;
+
+        li {
+            display: inline-block;
+            margin: 0 1em;
+
+            a {
+                text-decoration: none;
+                color: $lighter-green;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            #sing-in {
+                display: none;
+                color: $red;
+            }
+        }
+    }
+}
+
+.container {
+    @include clearfix;
+    background-color: $light-green;
+    padding: 2em;
+
+    .logo {
+        float: left;
+        width: 40%;
+
+        img {
+            float: left;
+            width: 50px;
+        }
+
+        h1 {
+            float: left;
+            text-transform: uppercase;
+            font-family: $second-font;
+            font-weight: normal;
+            padding-left: 0.5em;
+            padding-top: 0.2em;
+
+            span {
+                font-weight: bold;
+                color: $red;
+            }
+        }
+    }
+
+    form {
+        text-align: right;
+        float: right;
+        width: 60%;
+
+        input {
+            background-color: $dark-green;
+            border: none;
+            padding: 0.3em;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 0.3em 2em;
+            background-color: $red;
+            color: $light-green;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $dark-green;
+            }
+        }
+
+        p {
+            margin-top: 0.5em;
+            color: $dark-green;
+
+            a {
+                color: $red;
+            }
+        }
+
+        ::placeholder {
+            color: $light-green;
+        }
+    }
+}
+
+main {
+    padding: 2em 20em;
+    background-image: url("../slike/intro.jpg");
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+
+    h1 {
+        font-family: $second-font;
+        font-weight: normal;
+        color: white;
+        font-size: 2.5em;
+        background-color: #00000080;
+        padding: 0.5em;
+        margin-top: 3em;
+    }
+
+    a {
+        background-color: $dark-green;
+        color: $light-green;
+        padding: 0.5em 2em;
+        text-decoration: none;
+        border-radius: 5px;
+        display: inline-block;
+        margin-top: 2em;
+    }
+}
+
+.benefits {
+    padding: 4em;
+    background-color: $lighter-green;
+    @include clearfix;
+    text-align: center;
+    
+    .benefit {
+        float: left;
+        width: 33%;
+
+        .img {
+            float: left;
+            overflow: hidden;
+
+            img {
+                width: 70%;
+            }
+        }
+
+        h3 {
+            font-family: $second-font;
+            color: $red;
+            font-size: 1.5em;
+            margin-top: 0.5em;
+        }
+
+        p {
+            font-size: 13px;
+            margin-top: 1em;
+        }
+
+        &:hover img {
+            @include scale(1.1);
+        }
+    }
+}
+
+h2 {
+    text-transform: uppercase;
+    font-family: $second-font;
+    color: $dark-green;
+    margin-bottom: 2em;
+}
+
+.about-us {
+    padding: 4em 3em; 
+    @include clearfix;
+
+    h2 {
+        margin-bottom: 1em;
+    }
+
+    P {
+        text-align: justify;
+        margin-bottom: 1.5em;
+
+        span {
+            color: $red;
+        }
+    }
+
+    a {
+        float: right;
+        text-decoration: none;
+        color: $light-green;
+        background-color: $red;
+        padding: 0.5em 2em;
+        border-radius: 5px;
+    }
+}
+
+footer {
+    @include clearfix;
+    padding: 3em;
+    background-color: $dark-green;
+
+    .map {
+        float: right;
+        width: 40%;
+
+        iframe {
+            float: right;
+        }
+    }
+
+    form {
+        @include clearfix;
+        padding: 0.5em 1em;
+        background-color: grey;
+        float: left;
+        width: 50%;
+
+        h2 {
+            text-transform: uppercase;
+            color: $dark-green;
+            font-family: $second-font;
+            font-weight: normal;
+            margin-bottom: 1em;
+            text-align: center;
+        }
+
+        #name, #email {
+            float: left;
+            width: 50%;
+            margin-bottom: 0.5em;
+            padding: 0.3em;
+        }
+
+        #subject {
+            display: block;
+            width: 100%;
+            margin-bottom: 1.5em;
+            padding: 0.3em;
+        }
+
+        textarea {
+            display: block;
+            width: 100%;
+            margin-bottom: 1.5em;
+            height: 8em;
+            text-transform: uppercase;
+        }
+
+        button {
+            width: 100%;
+            padding: 0.3em;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+
+        ::placeholder {
+            text-transform: uppercase;
+        }
+    }
+}

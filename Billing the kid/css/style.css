@@ -1,0 +1,339 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #797979;
+}
+
+.nav-bar {
+  background-color: #374249;
+}
+.nav-bar .nav-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style-type: none;
+}
+@media screen and (max-width: 768px) {
+  .nav-bar .nav-list {
+    flex-direction: column;
+  }
+}
+.nav-bar .nav-list .list-item {
+  padding: 15px 30px;
+  margin-left: 20px;
+}
+@media screen and (max-width: 768px) {
+  .nav-bar .nav-list .list-item {
+    padding: 20px 30px;
+  }
+}
+.nav-bar .nav-list .list-item:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.nav-bar .nav-list .list-item a {
+  color: #797979;
+  text-decoration: none;
+  color: #cfd1d3;
+}
+.nav-bar .nav-list .bg-red {
+  background-color: #f38181;
+}
+@media screen and (max-width: 768px) {
+  .nav-bar .nav-list .bg-red {
+    order: -1;
+    width: 100%;
+    margin: 0;
+  }
+}
+.nav-bar .nav-list .bg-red img {
+  height: 30px;
+}
+
+header {
+  background-image: url(../slike/intro.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  height: 70vh;
+  color: #cfd1d3;
+}
+@media screen and (max-width: 768px) {
+  header {
+    background: black;
+    height: fit-content;
+  }
+}
+header .header-text {
+  background-color: rgba(55, 66, 73, 0.5);
+  width: 100%;
+  align-self: flex-end;
+  text-align: center;
+  padding: 10px 0;
+}
+header .header-text h1 {
+  font-size: 2.5rem;
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  header .header-text h1 {
+    font-size: 3rem;
+  }
+}
+
+.one {
+  padding: 30px;
+  text-align: end;
+  width: 80%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1080px) {
+  .one {
+    width: 90%;
+  }
+}
+.one .btn {
+  background-color: white;
+  border: 1px solid #cfd1d3;
+  padding: 15px 30px;
+  border-radius: 30px;
+  margin-left: 20px;
+}
+.one .btn:hover {
+  color: white;
+  background-color: #cfd1d3;
+  cursor: pointer;
+}
+
+.two {
+  background-color: #f3f7f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+.two .two-items {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px;
+}
+@media screen and (max-width: 768px) {
+  .two .two-items.order-change .text {
+    order: 1;
+  }
+}
+@media screen and (max-width: 768px) {
+  .two .two-items {
+    padding: 10px 0;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+.two .two-items:hover .img {
+  opacity: 1;
+}
+.two .two-items:hover .text {
+  visibility: visible;
+}
+.two .two-items .img {
+  opacity: 0.5;
+}
+@media screen and (max-width: 768px) {
+  .two .two-items .img {
+    opacity: 1;
+    margin-bottom: 10px;
+  }
+}
+.two .two-items .img img {
+  border-radius: 50%;
+  height: 250px;
+}
+.two .two-items .text {
+  visibility: hidden;
+  padding: 0 20px;
+  align-self: center;
+}
+@media screen and (max-width: 768px) {
+  .two .two-items .text {
+    visibility: visible;
+    width: 100%;
+    text-align: center;
+  }
+}
+.two .two-items .text h3 {
+  color: black;
+}
+
+.three {
+  padding: 30px;
+}
+.three h2 {
+  text-align: center;
+  color: #374249;
+  margin-bottom: 20px;
+  font-weight: bolder;
+}
+.three p {
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 500;
+}
+@media screen and (max-width: 768px) {
+  .three p {
+    margin-bottom: 20px;
+  }
+}
+.three table {
+  border-collapse: collapse;
+  text-align: center;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .three table {
+    display: none;
+  }
+}
+.three table td,
+.three table th {
+  padding: 10px 50px;
+  border: 1px solid #cfd1d3;
+}
+.three table .empty {
+  border: none;
+}
+.three table .bg-red {
+  background-color: #f38181;
+  color: white;
+  border: 1px solid #cfd1d3;
+}
+.three table .bg-dark {
+  background-color: #374249;
+  color: white;
+  border-bottom: 1px solid #cfd1d3;
+}
+.three .hidden {
+  display: none;
+  background-color: white;
+  border: 1px solid #cfd1d3;
+  padding: 15px 30px;
+  border-radius: 30px;
+  margin-left: 20px;
+}
+.three .hidden:hover {
+  color: white;
+  background-color: #cfd1d3;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .three .hidden {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.four {
+  padding: 30px;
+  background-color: #f3f7f9;
+}
+.four h2 {
+  text-align: center;
+  color: #374249;
+  margin-bottom: 20px;
+  font-weight: bolder;
+}
+.four .four-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .four .four-wrapper {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .four .four-wrapper {
+    flex-wrap: wrap;
+  }
+}
+.four .four-wrapper iframe {
+  width: 40%;
+}
+@media screen and (max-width: 1080px) {
+  .four .four-wrapper iframe {
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
+.four .four-wrapper form {
+  width: 55%;
+  height: 250px;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  flex-wrap: wrap;
+  background-color: #f38181;
+}
+@media screen and (max-width: 768px) {
+  .four .four-wrapper form {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .four .four-wrapper form {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+.four .four-wrapper form .form-item,
+.four .four-wrapper form input[type=text],
+.four .four-wrapper form input[type=email],
+.four .four-wrapper form textarea,
+.four .four-wrapper form select {
+  width: 100%;
+  padding: 5px;
+}
+.four .four-wrapper form .f-one {
+  flex: 0 0 30%;
+}
+@media screen and (max-width: 768px) {
+  .four .four-wrapper form .f-one {
+    flex: 0 0 100%;
+  }
+}
+.four .four-wrapper form .f-two {
+  flex: 0 0 65%;
+}
+@media screen and (max-width: 768px) {
+  .four .four-wrapper form .f-two {
+    flex: 0 0 100%;
+  }
+}
+.four .four-wrapper form .f-three,
+.four .four-wrapper form .f-foure {
+  flex: 0 0 100%;
+}
+
+footer {
+  background-color: #374249;
+  text-align: center;
+  color: white;
+  padding: 15px;
+}
+footer span {
+  color: #f38181;
+}
+
+/*# sourceMappingURL=style.css.map */

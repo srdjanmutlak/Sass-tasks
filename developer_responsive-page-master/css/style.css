@@ -1,0 +1,199 @@
+@font-face {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Noto Sans"), local("NotoSans"), url(https://fonts.gstatic.com/s/notosans/v10/o-0IIpQlx3QUlC5A4PNr5TRA.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+* {
+  font-size: 16px;
+  font-family: "Noto Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  width: 100%;
+  border-bottom: 2px solid #2626ff;
+}
+nav ul {
+  list-style-type: none;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+nav ul a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+}
+nav ul a:hover {
+  background-color: #2626ff;
+  color: white;
+}
+
+h1,
+h2,
+h3 {
+  color: #f07f34;
+  text-align: center;
+}
+
+h1,
+h2 {
+  border-bottom: 1px solid #f07f34;
+}
+
+.first.section {
+  background-image: url("../images/bkg1.jpg");
+  background-size: 100%;
+  background-position: center;
+  height: 50vh;
+  text-align: center;
+  position: relative;
+}
+.first.section .main-content {
+  padding-top: 10%;
+  width: 70%;
+  margin: 0 auto;
+}
+.first.section .main-content h1 {
+  font-size: 2em;
+}
+
+.section {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.second.section > div {
+  text-align: justify;
+  display: inline-block;
+}
+
+h2 {
+  font-size: 1.5em;
+  padding: 5px 0;
+  margin-bottom: 5px;
+}
+
+.second.section {
+  padding: 10px 0;
+}
+.second.section p {
+  padding: 10px 0;
+}
+.second.section .second {
+  column-count: 2;
+  column-gap: 15px;
+}
+.second.section .box {
+  display: inline-block;
+  border: 1px solid #2626ff;
+  width: 30%;
+  text-align: center;
+  padding: 5px;
+}
+.second.section .box img {
+  display: block;
+  margin: 5px auto;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.box.middle {
+  margin: 0 22px;
+}
+
+.third.section {
+  width: 70%;
+  margin: 0 auto;
+}
+.third.section:before, .third.section:after {
+  content: "";
+  display: block;
+}
+.third.section:after {
+  clear: both;
+}
+
+form {
+  width: 60%;
+  padding-top: 60px;
+  color: #f07f34;
+  display: inline-block;
+}
+form label {
+  display: block;
+  float: left;
+  margin: 10px 0;
+  width: 20%;
+}
+form input,
+form textarea {
+  width: 70%;
+}
+form input,
+form textarea {
+  margin: 10px 0;
+  border: 1px solid #f07f34;
+}
+form button {
+  float: right;
+  color: white;
+  background-color: #f07f34;
+  width: 20%;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10%;
+}
+
+.img-box {
+  width: 40%;
+  float: right;
+}
+.img-box img {
+  width: 100%;
+}
+
+footer {
+  background-color: #2626ff;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .section,
+.third.section,
+.services {
+    padding: 0 10px;
+    width: 100%;
+  }
+
+  .second.section .second {
+    column-count: unset;
+  }
+
+  .second.section .box {
+    display: block;
+    margin: 10px auto;
+    width: 70%;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .img-box {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

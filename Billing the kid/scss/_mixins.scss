@@ -1,0 +1,31 @@
+@mixin btn {
+  background-color: white;
+  border: 1px solid $color-lightgrey-one;
+  padding: 15px 30px;
+  border-radius: 30px;
+  margin-left: 20px;
+  &:hover {
+    color: white;
+    background-color: $color-lightgrey-one;
+    cursor: pointer;
+  }
+}
+
+@mixin headings {
+  text-align: center;
+  color: $color-headings;
+  margin-bottom: 20px;
+  font-weight: bolder;
+}
+
+@mixin medium {
+  @media screen and (max-width: $medium-width) {
+    @content;
+  }
+}
+
+@mixin small {
+  @media screen and (max-width: $small-width) {
+    @content;
+  }
+}

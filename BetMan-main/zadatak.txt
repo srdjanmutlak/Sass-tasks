@@ -1,0 +1,25 @@
+ZADATAK:
+	Korišćenjem HTML i Sass tehnologija realizovati HTML stranicu prikazanu na slikama.
+	Implementirati sledeće zahteve:
+	
+	1.	Sass kod modularizovati minimalno tako da se korišćene promenljive i mixini pišu u posebnim
+		  sass datotekama koje se uključuju u glavni fajl.
+	2.	Boje, fontove kao i ostale korisne vrednosti (po sopstvenoj proceni) izdvojiti u sass promenljive.
+	3.	Realizovati responsive verzije stranice za veliki i mali ekran.
+	4.	Kada se misem predje preko kolona u sekciji "Benefits", slike treba da se povecaju bez uticaja na ostale elemente na stranici 
+		(videti primer 'hover_primer.gif')
+	5.	Sliku 'favicon.png' postaviti kao ikonicu web stranice.
+  	6.  Koristiti git za verzionisanje tokom izrade zadatka. u lokalnom git repozitorijumu kreirati
+      	.gitignore datoteku koja odgovara ovom tipu projekta.
+
+BOJE:
+	
+	Zelena tamna: 		#206a5d
+	Zelena:				#81b214
+	Zelena svetla:		#bfdcae
+	Zelena svetlija:	#f1f1e8
+	Crvena:				#ff4b5c
+
+WEB FONTOVI:
+	Roboto (Regular 400)		-	Tekst
+	Fredoka One (Regular 400) 	- 	Logo i naslovi
