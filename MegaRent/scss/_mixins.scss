@@ -8,6 +8,29 @@
 	}
 }
 
+@mixin nav70procMargin0spacebetween {
+	nav {
+        width: 70%;
+        margin: 0 auto;
+        padding: 0.5em;
+
+        background-color: white;
+
+        display: flex;
+        justify-content: space-between;
+		}
+}
+
+@mixin ulFlexEndWithGap {
+	ul {
+            list-style: none;
+
+            display: flex;
+            gap: 15px;
+            align-items: flex-end;
+        }
+}
+
 @mixin inlineBlockList4FlexUsage {
 	ul {
         list-style: none;
