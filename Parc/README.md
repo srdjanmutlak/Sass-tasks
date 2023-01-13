@@ -5,4 +5,4 @@ Parcijalni ispit je podrazumevao pravljenje sajta bez fuknkcionalnosti. Odnosno 
 Sajt je delimicno responzivan, odnosno parametri zadatak su bili takvi da je bilo potrebno napraviti tri brakepoint-a, odnosno sajt
 je bilo potrebno prilagoditi za tri razlice velicine ekrana (400px, 800px i preko 1200px).
 
-Link: https://admirable-bunny-f8b93a.netlify.app/
+
